@@ -10,5 +10,5 @@ OPTIONS:
   -h: Print this help summary page.
   -t <seconds>: Time between two turns on and off (seconds).
   -v: Print version number.
-
-usb_port: USB port connect with SIM7600G-H 4G Module.
+  
+  usb_port: USB port connect with SIM7600G-H 4G Module.
