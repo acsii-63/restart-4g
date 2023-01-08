@@ -23,7 +23,7 @@ int main()
         std::cout << "SIM7600G-H found at USB "<< line.substr(found + 4, 5) << " port";
     }
     else
-        std::cout << "SIM7600G-H 4G Module not found, please check your connect between the Module and Jetson";
+        std::cout << "SIM7600G-H 4G Module not found, please check your connect between the Module and Jetson" << std::endl;
 
     dev_file.close();
     port_file.close();
