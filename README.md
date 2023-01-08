@@ -6,6 +6,5 @@ git clone https://github.com/acsii-63/restart-4g.git
 ```
 ## Usage:
 ```
-sudo bash restart-4g.sh {usb-port}
+sudo bash restart-4g.sh
 ```
-usb_port: The USB Port on Jetson, which is connected to SIM7600G-G 4G Module
