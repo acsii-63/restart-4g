@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dmesg | grep "Product: Dell" > detect_device.txt
+dmesg | grep "Product: SimTech" > detect_device.txt
 
 g++ -o usb-filter usb-filter.cpp
 
