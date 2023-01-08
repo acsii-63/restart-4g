@@ -10,6 +10,13 @@ if [[ $usb_port == "" ]]; then
     echo "usb_port: USB port connect with SIM7600G-H 4G Module."
 else
     while [[ 0 ]]; do
-        ping -c 1 google.com &> /dev/null && echo "connected" || sudo bash -c "echo $usb_port > /sys/bus/usb/drivers/usb/bind"
+        # ping -c 1 google.com &> /dev/null && echo "connected" || sudo bash -c "echo $usb_port > /sys/bus/usb/drivers/usb/bind"
+        if ping -c 1 google.com &> /dev/null
+        then
+            echo "connected"
+        else
+            sudo bash -c "echo $usb_port > /sys/bus/usb/drivers/usb/unbind"
+            sudo bash -c "echo $usb_port > /sys/bus/usb/drivers/usb/bind"
+        fi
     done
 fi
