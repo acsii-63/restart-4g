@@ -1,8 +1,9 @@
 #!/bin/bash
 
 args=("$@")
+usb_port=${args[0]}
 
-if [[ ${args[0]} == "" ]]; then
+if [[ $usb_port == "" ]]; then
     echo "RESTART when SIM7600G-H is disconnect to the Internet"
     echo "Usage: sudo bash restart-4g.sh {usb_port}"
     echo
