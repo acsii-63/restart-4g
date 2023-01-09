@@ -2,7 +2,7 @@
 
 dmesg | grep "Product: SimTech" > detect_device.txt
 
-g++ -o usb-filter usb-filter.cpp
+# g++ -o usb-filter usb-filter.cpp
 
 ./usb-filter
 
