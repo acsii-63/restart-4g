@@ -13,7 +13,9 @@ while [[ 0 ]]; do
     then
         echo "connected"
     else
+        echo "disconneted -> restarting..."
         sudo bash -c "echo $usb_port > /sys/bus/usb/drivers/usb/unbind"
         sudo bash -c "echo $usb_port > /sys/bus/usb/drivers/usb/bind"
+        echo "complete the restart"
     fi
 done
